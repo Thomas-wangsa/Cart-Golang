@@ -4,6 +4,6 @@ import (
 	Connection "Cart-Golang/connection"
 )
 
-func Show_Cart()  {
+func (d DepedencyInjection) Show_Cart()  {
 	Connection.ORM_Get()
 }

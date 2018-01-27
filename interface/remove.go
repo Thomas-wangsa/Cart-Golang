@@ -4,6 +4,6 @@ import (
 	Connection "Cart-Golang/connection"
 )
 
-func RemoveProduct(product string) {
+func (d DepedencyInjection) RemoveProduct(product string) {
 	Connection.ORM_Delete(product)
 }
