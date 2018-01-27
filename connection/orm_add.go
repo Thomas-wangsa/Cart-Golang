@@ -2,6 +2,7 @@ package connection
 
 import "log"
 
+// ORM Add Product
 func ORM_Add(product string,quantity int)  {
 	db := Connect()
 	defer db.Close()

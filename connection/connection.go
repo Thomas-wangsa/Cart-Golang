@@ -6,11 +6,13 @@ import (
 	"os"
 )
 
+// Struct Cart
 type cart struct {
 	product string
 	total int
 }
 
+// Connection to DB
 func Connect() *sql.DB {
 	username := "root"
 	password := "secret"

@@ -4,6 +4,7 @@ import (
 	Connection "Cart-Golang/connection"
 )
 
+// Init Interfaces
 type Interfaces interface {
 	RefreshData()
 	AddProduct(product string,quantity int)
@@ -14,6 +15,7 @@ type Interfaces interface {
 type DepedencyInjection struct {
 }
 
+// Interface Truncate Data
 func (d DepedencyInjection) RefreshData() {
 	Connection.ORM_Truncate()
 }

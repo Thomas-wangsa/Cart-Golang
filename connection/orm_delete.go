@@ -2,6 +2,7 @@ package connection
 
 import "log"
 
+// ORM Delete Product
 func ORM_Delete(product string)  {
 	db := Connect()
 	defer db.Close()

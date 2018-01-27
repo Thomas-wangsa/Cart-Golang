@@ -5,9 +5,11 @@ import (
 )
 
 func main() {
+    // Implement Interfaces
     var interfaces Interface.Interfaces
     interfaces = Interface.DepedencyInjection{}
 
+    // Interfaces function
     interfaces.RefreshData()
     interfaces.AddProduct("Product 1",2)
     interfaces.AddProduct("Product 1",5)

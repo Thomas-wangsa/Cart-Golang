@@ -2,6 +2,7 @@ package connection
 
 import "log"
 
+// ORM Truncate
 func ORM_Truncate() {
 	db := Connect()
 	defer db.Close()
