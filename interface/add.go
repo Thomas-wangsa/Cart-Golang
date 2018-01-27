@@ -2,23 +2,20 @@ package Interface
 
 import (
 	Connection "Cart-Golang/connection"
-	"log"
-	"os"
 )
 
+func RefreshData() {
+	Connection.ORM_Truncate()
+}
 
 func Show_Cart()  {
-	err := Connection.ORM_GET()
-	if err != nil {
-		log.Println(err.Error())
-		os.Exit(3)
-	}
+	Connection.ORM_Get()
 }
 
 func AddProduct(product string,quantity int) {
-	err := Connection.ORM_Add(product,quantity)
-		if err != nil {
-			log.Println(err.Error())
-			os.Exit(3)
-		}
+	Connection.ORM_Add(product,quantity)
+}
+
+func RemoveProduct(product string) {
+	Connection.ORM_Delete(product)
 }
