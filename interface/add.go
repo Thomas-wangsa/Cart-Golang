@@ -1,7 +1,7 @@
 package Interface
 
 import (
-	Connection "Cart-Golang/connection"
+	Connection "github.com/Thomas-wangsa/Cart-Golang/connection"
 )
 
 // Interface Add Product

@@ -1,7 +1,7 @@
 package main
 
 import (
-    Interface "Cart-Golang/interface"
+    Interface "github.com/Thomas-wangsa/Cart-Golang/interface"
 )
 
 func main() {
